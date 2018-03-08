@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>D.O.S.T</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body background="{{url_for('static', filename='xyz.jpg')}}">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">D.O.S.T.</a>
+    </div>
+    <ul class="nav navbar-nav" style="margin-left:850px">
+      <li class="" style=""><a href = '/'>Home</a></li>
+	  <li class="" style=""><a href = '/about'>About Us</a></li>
+	  <li class="active" style=""><a href = '/entry'>Report&Analysis</a></li>
+	  <li class="" style="margin-left:"><a href = '/logout'><span class="glyphicon glyphicon-log-out"></span>Logout </a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" >
+  <ul class="list-inline" style="margin-left:260px;margin-top:240px">
+	<li><button type="button" class="btn btn-danger" style="margin-right:300px;height:60px"><a href="/client" style="text-decoration:none;color:black">Generate Report</a></span></li>
+	<li><button type="button" class="btn btn-danger" style="height:60px"><a href="/ml" style="text-decoration:none;color:black;">Tweet Analysis</a></span></li>
+  <ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<meta http-equiv="refresh" content=1>
+<head>
+	<script type="text/javascript">
+		function func()
+		{
+			var today = new Date();
+			document.write("<h1>"+today+"</h1>");
+			var h= today.getHours();
+			var am="AM";
+			if(h>12)
+			{
+				am="PM";
+				h=h-12;
+			}
+			document.write("<table border='2px' cellpadding=29px><tr style='padding=10px;'><th style='background-color:green'> "+h+"</th></td>");
+			document.write("<th style='background-color:aqua'> "+today.getMinutes()+"</th></td>");
+			document.write("<th style='background-color:aqua'> "+today.getSeconds()+"</th></td>");
+			document.write("<th style='background-color:blue'> "+am+"</th></td></table>");
+		}
+	</script>
+</head>
+<script >
+	func();
+</script>
+</html>

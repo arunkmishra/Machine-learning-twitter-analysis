@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Client</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,0,0,0.2);
+    z-index: 2;
+}
+</style>
+</head>
+<body>
+<div id="overlay" >
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <ul class="nav navbar-nav">
+      <li class="active" ><a href="/client"><span class="glyphicon glyphicon-circle-arrow-left"></span></a></li>
+    </ul>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">D.O.S.T</a>
+    </div>
+    <ul class="nav navbar-nav" style="margin-left:820px">
+      <li class="active" style=""><a href = '/'>Home</a></li>
+	  <li class="" style=""><a href = '/about'>About Us</a></li>
+	  <li class="" style=""><a href = '/entry'>Report&Analysis</a></li>
+	  <li class="" style="margin-left:"><a href = '/logout'><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <h1><strong>D.O.S.T</strong> (Detection of Online Spread of Terrorism)</h1>
+  <div class="well">
+	<p>This graph show the Most common Language used :</p>            
+  <img src="{{url_for('static', filename='second.png')}}" class="img-rounded" alt="first report" width="500" height="250" style="margin-left:250px">
+  </div>
+</div>
+</div>
+</body>
+</html>
